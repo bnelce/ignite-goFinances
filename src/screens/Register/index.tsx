@@ -81,10 +81,15 @@ export function Register() {
       category: category.key, 
     }
 
-    console.log(data);
+    try {
+      
+    } catch (error) {
+      console.log(data);
+      Alert.alert('Não foi possível salvar o registro!');
+    }
+        
   }
  
-
   return (
     <TouchableWithoutFeedback onPress={Keyboard.dismiss}>
       <Container>
